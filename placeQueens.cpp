@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//check if column and diagonal lines at (row,column) is available
+//check if column and diagonal lines at (row,column) are available
 bool isAvailable(vector<vector<int>>board, int row, int column) {  
 	for (int i = 0; i < board.size(); i++) if (board[i][column] == 1) return false;
 	for (int i = row, j = column; i >= 0 && j >= 0; i--, j--) if (board[i][j] == 1) return false;
